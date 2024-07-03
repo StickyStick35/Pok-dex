@@ -36,7 +36,7 @@ const Pokedex = () => {
   const cbFilter = (poke) => {
     return poke.name.includes(inputValue);
   }
-  const quantity = 8;
+  const quantity = 20;
   const total = Math.ceil(pokemons?.results.filter(cbFilter).length / quantity);
   const pages = () => {
     const end = quantity * paginate;
